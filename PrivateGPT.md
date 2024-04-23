@@ -47,3 +47,6 @@ export PATH="/home/vamc/.local/bin:$PATH"
 - 
 
 poetry install --extras "ui embeddings-huggingface llms-llama-cpp vector-stores-qdrant" 
+
+Reference:
+- https://medium-free.vercel.app/read?url=https://medium.com/@docteur_rs/installing-privategpt-on-wsl-with-gpu-support-5798d763aa31
