@@ -45,3 +45,5 @@ export PATH="/home/vamc/.local/bin:$PATH"
 `
 - source  .bashrc
 - 
+
+poetry install --extras "ui embeddings-huggingface llms-llama-cpp vector-stores-qdrant" 
