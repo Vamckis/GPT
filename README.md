@@ -5,12 +5,28 @@
  - export OPENAI_API_KEY= <Key from OpenAI>
  - export CHATGPT_KEY= <Key from Open AI>
  - pip install shell-gpt
- - apt install python3-venv
- - mkdir shellgpt
- - cd shellgpt
- - python3 -m venv shellgpt
+ - pip install shell-gpt[litellm]
 
-References:
+### Setting up Ollama
+ - curl -fsSL https://ollama.com/install.sh | sh
+ - ollama run llama3
+ - If ollma dont run, execute: ollama serve
+ - ollama list
+
+### Modify ShellGPT configuration
+ - nano ~/.config/shell_gpt/.sgptrc
+`
+DEFAULT_MODEL = ollama/llama3:latest
+OPENAI_USE_FUNCTIONS = false
+USE_LITELLM = true
+`
+
+### Prompt 
+ - sgpt --shell "What is capital of India"
+ - sgpt --interaction "What is my current system Ip address"
+ - sgpt --code "Write basic HTML code for a web app"
+
+### References:
 - https://github.com/TheR1D/shell_gpt/wiki/Ollama
 - https://rohanadhvaryu.medium.com/bwapp-buggy-web-application-web-app-setup-on-your-localhost-kali-linux-6d2dd49badbc
 - https://github.com/nishantshah977/medium-free
