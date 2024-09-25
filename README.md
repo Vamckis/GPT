@@ -37,3 +37,4 @@ USE_LITELLM = true
 - https://github.com/nishantshah977/medium-free
 - https://www.youtube.com/watch?v=WxYC9-hBM_g&list=LL&index=1
 - https://medium.com/@docteur_rs/installing-privategpt-on-wsl-with-gpu-support-5798d763aa31
+- https://www.youtube.com/watch?v=Wjrdr0NU4Sk&t
